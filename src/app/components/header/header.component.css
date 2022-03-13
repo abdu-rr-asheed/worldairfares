@@ -1,0 +1,43 @@
+nav .logo {
+  width: 210px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.nav-menu > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.tel-number {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.en,
+.help {
+  border: 1px solid #fff;
+  padding: 9px 15px;
+  border-radius: 39px;
+  height: 30px;
+}
+
+.help img {
+  width: 27px;
+  margin-right: 10px;
+}
+.en img {
+  width: 22px;
+  margin-right: 10px;
+}
+.menu img {
+  width: 31px;
+  margin-right: 10px;
+}
