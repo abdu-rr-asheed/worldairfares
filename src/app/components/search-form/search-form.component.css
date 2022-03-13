@@ -9,8 +9,8 @@ section {
 .form-container {
   position: relative;
   /* width: 1140px; */
-  min-width: 1140px;
-  height: 250px;
+  /* min-width: 1140px;
+  height: 250px; */
   border-radius: 20px;
   padding: 20px;
   background-color: #041d31bf;
@@ -83,8 +83,9 @@ input:checked + .slider:before {
   color: #fff;
 }
 
-.radio-btn > div > label {
+.form-container > .direct-fght > span {
   padding: 15px;
+  color: #fff;
 }
 .radio-btn {
   display: flex;
@@ -95,6 +96,7 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   color: #fff;
+  font-weight: 500;
 }
 .form-btn {
   display: flex;
@@ -102,10 +104,41 @@ input:checked + .slider:before {
   background: #fff;
   height: 40px;
   color: #000;
+  border-right: 1px solid #bfc5ca;
+  cursor: pointer;
 }
-.form-btn:nth-child(1) {
+.form-btn img {
+  margin: 0 10px;
+}
+.form-btn .dateInput {
+  width: 0;
+  height: 0;
+  outline: none;
+  border: none;
+}
+
+.btn-label {
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.search-icon {
+  position: relative;
+  top: 11px;
+  background: #ff751a;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.search-icon img {
+  width: 30px;
+}
+.form-btn span {
+  margin-right: 40px;
+}
+.form-label:nth-child(1) > .form-btn {
   border-radius: 10px 0 0 10px;
 }
-.form-btn:nth-last-child(1) {
+.form-label:nth-last-child(1) > .form-btn {
   border-radius: 0 10px 10px 0;
 }
