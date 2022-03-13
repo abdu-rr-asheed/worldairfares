@@ -83,7 +83,7 @@ input:checked + .slider:before {
   color: #fff;
 }
 
-.form-container > .direct-fght > span {
+.form-container > .direct-fight > span {
   padding: 15px;
   color: #fff;
 }
@@ -92,11 +92,13 @@ input:checked + .slider:before {
   justify-content: center;
 }
 .form-btn-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 .form-btn {
   display: flex;
@@ -136,9 +138,16 @@ input:checked + .slider:before {
 .form-btn span {
   margin-right: 40px;
 }
+.form-label {
+  position: relative;
+}
 .form-label:nth-child(1) > .form-btn {
   border-radius: 10px 0 0 10px;
 }
 .form-label:nth-last-child(1) > .form-btn {
   border-radius: 0 10px 10px 0;
+}
+
+.direct-fight {
+  margin-top: 10px;
 }

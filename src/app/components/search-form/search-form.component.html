@@ -7,10 +7,11 @@
     <div class="form-btn-container">
       <div class="form-label">
         <div class="btn-label">Car Pick-Up</div>
-        <div class="form-btn">
+        <div class="form-btn" (click)="toggleClick()">
           <img src="../../../assets/location.svg" alt="" />
           <span>Drop-off Location</span>
         </div>
+        <app-departing-input *ngIf="toggle"></app-departing-input>
       </div>
       <div class="form-label">
         <div class="btn-label">Car Drop-Off</div>
@@ -43,12 +44,13 @@
           <span>18 - 70 Years</span>
         </div>
       </div>
-      <div class="form-label">
+      <div class="form-label" (click)="drLivesToggle()">
         <div class="btn-label">Driver Lives In</div>
         <div class="form-btn">
           <img src="../../../assets/location.svg" alt="" />
           <span>Sri Lanka</span>
         </div>
+        <app-driver-lives *ngIf="drLives"></app-driver-lives>
       </div>
       <div class="form-label">
         <div class="form-btn search-icon">
@@ -56,7 +58,7 @@
         </div>
       </div>
     </div>
-    <label class="direct-fght">
+    <label class="direct-fight">
       <input type="checkbox" />
       <span>Direct Flights</span>
     </label>
